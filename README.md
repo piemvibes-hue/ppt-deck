@@ -8,6 +8,19 @@ inspect-   ──▶ shoot.cjs ──▶ python-pptx ──▶ render.sh + qa-de
 template.py    dsf=3 裁切     deck_helpers.py   每页 PNG + 口径断言
 ```
 
+## 给 agent 用（跨工具）
+
+根目录本身就是合法 skill 目录。装进你的工具：
+
+| 工具 | 装法 |
+|---|---|
+| Claude Code | 复制为 `<项目>/.claude/skills/ppt-deck/`（或 `~/.claude/skills/`） |
+| Codex | 复制为 `<项目>/.codex/skills/ppt-deck/` |
+| Devin | 复制为 `<项目>/.devin/skills/ppt-deck/` |
+| 其他 agent | 直接喂 `SKILL.md` 作上下文 |
+
+详见 [AGENTS.md](AGENTS.md)。
+
 ## 四步
 
 ```bash
