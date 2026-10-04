@@ -5,7 +5,7 @@
 ```
 模板解剖        素材拍摄          逐页构建            QA 双门禁
 inspect-   ──▶ shoot.cjs ──▶ python-pptx ──▶ render.sh + qa-deck.py ──▶ deck.pptx
-template.py    dsf=3 裁切     deck-helpers.py   每页 PNG + 口径断言
+template.py    dsf=3 裁切     deck_helpers.py   每页 PNG + 口径断言
 ```
 
 ## 四步
@@ -17,7 +17,7 @@ python3 scripts/inspect-template.py "官方模板.pptx"
 # 2. 拍素材：全景 dsf=2 + 组件裁切 dsf=3（折叠卡先点开）
 BASE=http://localhost:5173 OUT=./shots node scripts/shoot.cjs
 
-# 3. 构建：import deck-helpers 写 build.py
+# 3. 构建：import deck_helpers 写 build.py
 #    Presentation('模板.pptx') 直接加页；browser() 读图原比例 contain-fit 永不拉伸
 
 # 4. QA：逐页渲染亲眼看 + 口径门禁强制

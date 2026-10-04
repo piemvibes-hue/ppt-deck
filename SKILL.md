@@ -41,7 +41,7 @@ s = prs.slides.add_slide(prs.slide_layouts[内容页索引])
 
 - 用模板自带的 slide_layout 加页，别新建空白页自己画背景——评审认的是「用了官方模板」
 - 封面按模板占位符要求填（作品名/赛道/队伍名），删掉模板自带的「请替换此处」注释块
-- 统一 helper 只写一次（`scripts/deck-helpers.py`）：`tx()`（段内多 run 混排+字距）、`panel()`（圆角卡）、`browser()`（见下）、`page_title()`（板块标签+页题+分隔线）、`feat()`（编号卡）。每页 = `page_title` + 一种布局套路（demo_slide 左图右点 / duo_slide 双图 / 卡阵）
+- 统一 helper 只写一次（`scripts/deck_helpers.py`）：`tx()`（段内多 run 混排+字距）、`panel()`（圆角卡）、`browser()`（见下）、`page_title()`（板块标签+页题+分隔线）、`feat()`（编号卡）。每页 = `page_title` + 一种布局套路（demo_slide 左图右点 / duo_slide 双图 / 卡阵）
 - **字体只指定一次**（模板推荐字体，如思源黑体 CN），`_ea` 把 latin/ea/cs 三个 typeface 全设了——中文漏设 ea 会渲染成宋体
 
 ### 5. 图片铁律：原比例缩放，永不拉伸
