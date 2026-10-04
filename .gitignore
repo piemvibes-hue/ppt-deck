@@ -1,0 +1,4 @@
+__pycache__/
+renders/
+shots/
+*.egg-info
